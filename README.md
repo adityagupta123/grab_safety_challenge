@@ -9,6 +9,8 @@ Feature Engineering
 
 The idea of Rash driving can be classified as combination of Speed and Movement, where Speed is defined as speed along the direction of the car and Movement is defined as angular change in the GPS Bearing.
 High speed alone may not be enough for Rash Driving and similarly angular change also will not define rash driving. A combination of both Speed and Movement is needed to classify Rash driving.
+
+The idea is to Combine ZIG-ZAG movements with High Speed and other indicators of Rash Movement.
 	
 	Movement : Change in the GPS Bearing across time will depict the the angular change per second in the direction of car.
 	
@@ -42,14 +44,14 @@ High speed alone may not be enough for Rash Driving and similarly angular change
 	
 	gyro_movement: If the gyro_xyz is above a certain threshold it is classified as 1 or else 0
 	
-	sign_s: Instance where both Rash Speed and Sudden Change in direction are there
+	sign_s: Instance where both Rash Speed and Sudden Change(Sign) in angular direction are there
 	
 	a_m: Instance where both acc_movement and gyro_movement are there
 	
 	a_s: Instance where both acc_movement and Rash Speed are there
 	
-	sign_m: Instance where both Rash Speed and Sudden Change in direction are there
+	sign_m: Instance where both Rash Speed and Sudden Change(Sign) in angular direction are there
 	
 	a_m_s: Instance where both Rash Speed , Acc_movement and gyro_movement are there
 	
-	sign_a_m_s: Instance where both Rash Speed , Acc_movement and gyro_movement are there
+	sign_a_m_s: Instance where both Sudden Change(Sign) in angular direction, Rash Speed , Acc_movement and gyro_movement are there
